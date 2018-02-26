@@ -36,7 +36,7 @@ function len(thing) {
 
 const dict = require('./dict');
 const str = require('./str');
-const array = require('array');
+const array = require('./array');
 
 module.exports = {
     range,
