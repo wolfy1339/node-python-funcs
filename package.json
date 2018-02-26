@@ -1,0 +1,31 @@
+{
+  "name": "node-python-funcs",
+  "version": "0.0.2",
+  "description": "Implements various Python functions and methods for use in Node",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wolfy1339/node-python-funcs.git"
+  },
+  "keywords": [
+    "python",
+    "migration",
+    "compatibility"
+  ],
+  "author": "wolfy1339 <webmaster@wolfy1339.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wolfy1339/node-python-funcs/issues"
+  },
+  "homepage": "https://github.com/wolfy1339/node-python-funcs#readme",
+  "engines": {
+    "node": ">=7"
+  },
+  "devDependencies": {
+    "eslint": "^4.18.1",
+    "eslint-config-google": "^0.9.1"
+  }
+}
