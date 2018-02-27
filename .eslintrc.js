@@ -47,6 +47,7 @@ module.exports = {
         "no-cond-assign": "error",
         "block-scoped-var": "error",
         "no-else-return": "error",
-        "no-undef-init": "error"
+        "no-undef-init": "error",
+        "new-cap": "off"
     }
 };
