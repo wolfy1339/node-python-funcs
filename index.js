@@ -24,12 +24,12 @@ function* range(start, stop, step=1) {
 }
 
 /**
-* Function to imitate Python's len() function.
-* Wrapper function around the `.length` property
-* @func
-* @param {*} thing
-* @return {number}
-*/
+ * Function to imitate Python's len() function.
+ * Wrapper function around the `.length` property
+ * @func
+ * @param {*} thing
+ * @return {number}
+ */
 function len(thing) {
     return thing.length;
 }

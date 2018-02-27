@@ -1,3 +1,5 @@
+const {range, len} = require('./index.js');
+
 /**
 * Yield successive n-sized chunks from l.
 * @generator
