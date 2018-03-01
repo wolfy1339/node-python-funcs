@@ -2,9 +2,9 @@
  * Function to imitate Python's range function
  * Returns an Array that produces a sequence of integers from start (inclusive) to stop (exclusive) by step.
  * @generator
- * @param {number} [start] - The starting number. Defaults to 0.
+ * @param {number} [start=0] - The starting number. Defaults to 0.
  * @param {number} stop - The end number.
- * @param {number} [step] - Specifies the increment (or decrement). Defaults to 1.
+ * @param {number} [step=1] - Specifies the increment (or decrement). Defaults to 1.
  * @yields {array} - An Array containing the specified range.
  */
 function* range(start, stop, step=1) {

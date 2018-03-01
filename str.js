@@ -22,7 +22,7 @@ function partition(string, sep) {
  * @func
  * @param {string} string - The string you want split.
  * @param {string} sep - The seperator by which you want the string to be split
- * @param {number} [maxCount] - The maximum count of times you wish to split
+ * @param {number} [maxCount=null] - The maximum count of times you wish to split
  * @return {array} - An Array containing the split string
  */
 function split(string, sep, maxCount=null) {
@@ -73,7 +73,7 @@ class str extends String {
     * @func
     * @extends split
     * @param {string} sep - The seperator by which you want the string to be split
-    * @param {number} [maxCount] - The maximum count of times you wish to split
+    * @param {number} [maxCount=null] - The maximum count of times you wish to split
     * @return {array} - An Array containing the split string
     */
     split(sep, maxCount=null) {

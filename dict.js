@@ -28,7 +28,7 @@ class dict extends Object {
     /**
     * @func
     * @param {string} key
-    * @param {*} [def]
+    * @param {*} [def=null]
     * @return {(object|array|string|function|boolean|number)}
     */
     get(key, def=null) {
@@ -38,7 +38,7 @@ class dict extends Object {
     /**
     * @func
     * @param {string} key
-    * @param {*} [def]
+    * @param {*} [def=null]
     * @return {*}
     */
     pop(key, def=null) {
@@ -52,7 +52,7 @@ class dict extends Object {
     /**
     * @func
     * @param {string} key
-    * @param {*} [def]
+    * @param {*} [def=null]
     * @return {*}
     */
     setdefault(key, def=null) {
