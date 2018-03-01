@@ -4,7 +4,8 @@
   "description": "Implements various Python functions and methods for use in Node",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "install": "babel *.js --out-dir ."
   },
   "repository": {
     "type": "git",
@@ -22,10 +23,16 @@
   },
   "homepage": "https://github.com/wolfy1339/node-python-funcs#readme",
   "engines": {
-    "node": ">=7"
+    "node": ">=6"
   },
   "devDependencies": {
     "eslint": "^4.18.1",
     "eslint-config-google": "^0.9.1"
+  },
+  "dependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.6.1"
   }
 }
