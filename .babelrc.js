@@ -5,6 +5,8 @@ if (require('semver').satisfies(process.version.slice(1), '6 - 7')) {
             useBuiltIns: true
         }
     ]);
+} else {
+    plugins.push('syntax-object-rest-spread')
 }
 
 module.exports = {
