@@ -1,18 +1,18 @@
 let plugins = []
 if (require('semver').satisfies(process.version.slice(1), '6 - 7')) {
     plugins.push([
-        'transform-object-rest-spread', {
+        '@babel/plugin-proposal-object-rest-spread', {
             useBuiltIns: true
         }
     ]);
 } else {
-    plugins.push('syntax-object-rest-spread')
+    plugins.push('@babel/plugin-syntax-object-rest-spread')
 }
 
 module.exports = {
     presets: [
         [
-            'env', {
+            '@babel/env', {
                 targets: {
                     node: 'current'
                 }
