@@ -1,11 +1,11 @@
 /** Class to imitate Python dicts */
 class dict extends Object {
-
     /**
-    * @param {object} value - The native JavaScript object you wish to
+    * @param {object} value - The native JavaScript object you wish to use
     */
     constructor(value) {
-        super(value);
+        super();
+        this.update(value);
     }
 
     /**
@@ -77,9 +77,8 @@ class dict extends Object {
     */
     update(other) {
         for (let key of Object.keys(other)) {
-            if (typeof other[key] === 'object' && other[key] !== null && !(other[key] instanceof Array)) {
-                this[key] = new Dict();
-                this[key].update(other[key]);
+            if (other[key] instanceof Object && !(other[key] instanceof Array)) {
+                this[key] = new dict(other[key]);
             } else {
                 this[key] = other[key];
             }

@@ -26,7 +26,7 @@ function partition(string, sep) {
  * @return {array} - An Array containing the split string
  */
 function split(string, sep, maxCount=null) {
-    if (maxCount !== null) {
+    if (maxCount !== null && typeof maxCount === 'number') {
         string = string.split(sep);
         const first = string.slice(0, maxCount);
         const second = string.slice(maxCount).join(sep);
