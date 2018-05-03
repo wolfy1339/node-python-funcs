@@ -1,6 +1,6 @@
 {
   "name": "node-python-funcs",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Implements various Python functions and methods for use in Node",
   "main": "index.js",
   "scripts": {
