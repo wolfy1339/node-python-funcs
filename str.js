@@ -27,6 +27,9 @@ function partition(string, sep) {
  */
 function split(string, sep, maxCount=null) {
     if (maxCount !== null && typeof maxCount === 'number') {
+        if (!string.includes(sep)) {
+            return [string];
+        }
         string = string.split(sep);
         const first = string.slice(0, maxCount);
         const second = string.slice(maxCount).join(sep);
