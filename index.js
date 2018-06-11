@@ -73,7 +73,10 @@ function dir(something) {
     return Object.keys(something);
 }
 
-const isASCII = () => {};
+function isASCII(char) {
+    return /^[\x00-\x7F]*$/.test(char);
+};
+
 function ascii(string) {
     let s = '';
     for (let i of string) {
