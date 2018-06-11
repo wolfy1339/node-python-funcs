@@ -1,5 +1,5 @@
 let plugins = []
-if (require('semver').satisfies(process.version.slice(1), '6 - 7')) {
+if (require('semver').satisfies(process.version.slice(1), '6 - 8.2')) {
     plugins.push([
         '@babel/plugin-proposal-object-rest-spread', {
             useBuiltIns: true
