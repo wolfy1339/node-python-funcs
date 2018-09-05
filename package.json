@@ -26,8 +26,8 @@
     "node": ">=6"
   },
   "devDependencies": {
-    "eslint": "^4.18.1",
-    "eslint-config-google": "^0.9.1"
+    "eslint": "^5.5.0",
+    "eslint-config-google": "^0.10.0"
   },
   "dependencies": {
     "@babel/cli": "^7.0.0",
