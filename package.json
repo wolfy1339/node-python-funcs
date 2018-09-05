@@ -4,7 +4,7 @@
   "description": "Implements various Python functions and methods for use in Node",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "echo \"Error: no test specified\"",
     "install": "babel *.js --out-dir ."
   },
   "repository": {
