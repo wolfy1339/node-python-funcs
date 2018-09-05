@@ -4,7 +4,7 @@
   "description": "Implements various Python functions and methods for use in Node",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\"",
+    "test": "eslint *.js",
     "install": "babel *.js --out-dir ."
   },
   "repository": {
@@ -30,10 +30,10 @@
     "eslint-config-google": "^0.9.1"
   },
   "dependencies": {
-    "@babel/cli": "^7.0.0-beta.49",
-    "@babel/core": "^7.0.0-beta.49",
-    "@babel/plugin-proposal-object-rest-spread": "^7.0.0-beta.49",
-    "@babel/plugin-syntax-object-rest-spread": "^7.0.0-beta.49",
-    "@babel/preset-env": "^7.0.0-beta.49"
+    "@babel/cli": "^7.0.0",
+    "@babel/core": "^7.0.0",
+    "@babel/plugin-proposal-object-rest-spread": "^7.0.0",
+    "@babel/plugin-syntax-object-rest-spread": "^7.0.0",
+    "@babel/preset-env": "^7.0.0"
   }
 }
