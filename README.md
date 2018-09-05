@@ -1,4 +1,7 @@
 # node-python-funcs
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/wolfy1339/node-python-funcs.svg)](https://greenkeeper.io/)
+
 Implements various Python functions and methods for use in Node
 
 ## Docs
