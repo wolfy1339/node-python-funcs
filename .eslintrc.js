@@ -45,6 +45,7 @@ module.exports = {
         "block-scoped-var": "error",
         "no-else-return": "error",
         "no-undef-init": "error",
-        "new-cap": "off"
+        "new-cap": "off",
+        "require-jsdoc": "warning"
     }
 };
