@@ -46,6 +46,6 @@ module.exports = {
         "no-else-return": "error",
         "no-undef-init": "error",
         "new-cap": "off",
-        "require-jsdoc": "warning"
+        "require-jsdoc": "warn"
     }
 };
