@@ -1,7 +1,7 @@
 function hex(number) {
     let num = Number(number).toString(16);
     if (num.startsWith('-')) {
-        return `-0b${num.slice(1)}`;
+        return `-0x${num.slice(1)}`;
     }
     return `0x${num}`;
 }
