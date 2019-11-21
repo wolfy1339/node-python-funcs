@@ -26,14 +26,14 @@
     "node": ">=6"
   },
   "devDependencies": {
-    "eslint": "^5.5.0",
+    "eslint": "^6.6.0",
     "eslint-config-google": "^0.10.0"
   },
   "dependencies": {
-    "@babel/cli": "^7.1.1",
-    "@babel/core": "^7.1.1",
-    "@babel/plugin-proposal-object-rest-spread": "^7.0.0",
-    "@babel/plugin-syntax-object-rest-spread": "^7.0.0",
-    "@babel/preset-env": "^7.1.0"
+    "@babel/cli": "^7.7.0",
+    "@babel/core": "^7.7.2",
+    "@babel/plugin-proposal-object-rest-spread": "^7.6.2",
+    "@babel/plugin-syntax-object-rest-spread": "^7.2.0",
+    "@babel/preset-env": "^7.7.1"
   }
 }
