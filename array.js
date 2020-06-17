@@ -1,4 +1,4 @@
-const {range, len} = require('./index.js');
+const { range, len } = require('./index.js');
 
 /** */
 class list extends Array {
@@ -8,8 +8,9 @@ class list extends Array {
     constructor(iterable) {
         if (!(iterable instanceof Array)) {
             super();
-            let x = Array.from(iterable);
-            for (let i of range(len(x))) {
+            const x = Array.from(iterable);
+
+            for (const i of range(len(x))) {
                 this[i] = x[i];
             }
         } else {
@@ -27,6 +28,7 @@ class list extends Array {
         if (typeof key === 'function') {
             return super.sort(key);
         }
+
         return super.sort();
     }
 
@@ -38,7 +40,8 @@ class list extends Array {
     */
     slice(start=0, stop, step=1) {
         let iterable;
-        let x = this;
+        const x = this;
+
         if (typeof stop == 'undefined') {
             // one param defined
             stop = start;
@@ -48,7 +51,7 @@ class list extends Array {
             iterable = range(start, stop, step);
         }
 
-        for (let i of iterable) {
+        for (const i of iterable) {
             x.pop(i);
         }
 
@@ -64,7 +67,7 @@ class list extends Array {
 * @yields {array}
 */
 function* chunks(l, n) {
-    for (let i of range(0, len(l), n)) {
+    for (const i of range(0, len(l), n)) {
         yield l.slice(i, i + n);
     }
 }

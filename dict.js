@@ -20,7 +20,7 @@ class dict extends Object {
     * @func
     */
     clear() {
-        for (let key of this.keys()) {
+        for (const key of this.keys()) {
             delete this[key];
         }
     }
@@ -42,7 +42,7 @@ class dict extends Object {
     * @return {*}
     */
     pop(key, def=null) {
-        let old = this[key];
+        const old = this[key];
 
         delete this[key];
 
@@ -76,7 +76,7 @@ class dict extends Object {
     * @param {object} other
     */
     update(other) {
-        for (let key of Object.keys(other)) {
+        for (const key of Object.keys(other)) {
             if (other[key] instanceof Object && !(other[key] instanceof Array)) {
                 this[key] = new dict(other[key]);
             } else {

@@ -1,9 +1,11 @@
 /* eslint-disable require-jsdoc */
 function sum(start=0, ...numbers) {
     let x = start;
-    for (let i of numbers) {
+
+    for (const i of numbers) {
         x += i;
     }
+
     return x;
 }
 
@@ -26,6 +28,7 @@ function pow(base, exp, modulo=1) {
     if (exp < 0 && modulo) {
         throw Error('modulo must be ommited if the exponent is negative');
     }
+
     return Math.pow(base, exp) % modulo;
 }
 

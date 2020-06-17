@@ -9,7 +9,7 @@ const util = require('util');
  */
 function partition(string, sep) {
     if (string.indexOf(sep) > -1) {
-        let x = string.split(sep);
+        const x = string.split(sep);
 
         return [x[0], sep, x[1]];
     }

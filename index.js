@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 /**
  * Function to imitate Python's range function
  * Returns an Array that produces a sequence of integers from start (inclusive) to stop (exclusive) by step.
@@ -51,8 +52,9 @@ function print(data, sep=' ', end='\n', file=process.stdout) {
         file = process.stdout;
     }
     let text = null;
+
     if (typeof data !== 'string') {
-        for (let i of range(len(data))) {
+        for (const i of range(len(data))) {
             data[i] = data[i].toString();
         }
         text = data.join(sep);
@@ -74,18 +76,21 @@ function dir(something) {
 }
 
 function isASCII(char) {
+    // eslint-disable-next-line no-control-regex
     return /^[\x00-\x7F]*$/.test(char);
-};
+}
 
 function ascii(string) {
     let s = '';
-    for (let i of string) {
+
+    for (const i of string) {
         if (!isASCII(i)) {
             s += `\\u${i.codePointAt(0)}`;
         } else {
             s += i;
         }
     }
+
     return s;
 }
 
@@ -105,6 +110,7 @@ function issubclass(class1, classinfo) {
     if (typeof class1 !== 'function' || typeof classinfo !== 'function') {
         throw TypeError('issubclass() args must be a class or list of classes');
     }
+
     return class1.prototype instanceof classinfo;
 }
 
@@ -112,17 +118,20 @@ function next(iterable, def) {
     return iterable.next() || def;
 }
 
-function* zip(...iterables) {
+/* function* zip(...iterables) {
     // zip('ABCD', 'xy') --> Ax By
-    let sentinel = Object();
-    let iterators = [];
-    for (let i of iterables) {
+    const sentinel = Object();
+    const iterators = [];
+
+    for (const i of iterables) {
         iterators.push(iter(i));
     }
     while (iterators) {
-        let result = [];
-        for (let it of iterators) {
-            let elem = next(it, sentinel);
+        const result = [];
+
+        for (const it of iterators) {
+            const elem = next(it, sentinel);
+
             if (elem === sentinel) {
                 yield;
             }
@@ -130,12 +139,13 @@ function* zip(...iterables) {
         }
         yield tuple(result);
     }
-}
+}*/
 
 class bytearray {
     constructor(source, encoding, errors) {
         if (typeof source === 'string') {
             this.source = Buffer(source).toString('hex');
+
             return this.source;
         } else if (typeof source == 'number') {
             new Array(source);

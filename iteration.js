@@ -1,10 +1,13 @@
+const { isinstance, range, len } = require('./index');
+
 function* enumerate(iterable, start=0) {
     if (isinstance(iterable, Array)) {
         yield iterable.entries();
     } else {
-        let keys = Object.keys(iterable);
-        let x = [];
-        for (let i of range(start, len(keys))) {
+        const keys = Object.keys(iterable);
+        const x = [];
+
+        for (const i of range(start, len(keys))) {
             x.push([i, keys[i]]);
         }
         yield x;
@@ -12,20 +15,22 @@ function* enumerate(iterable, start=0) {
 }
 
 function all(iterable) {
-    for (let element of iterable) {
+    for (const element of iterable) {
         if (!element) {
             return false;
         }
     }
+
     return true;
 }
 
 function any(iterable) {
-    for (let element of iterable) {
+    for (const element of iterable) {
         if (element) {
             return true;
         }
     }
+
     return false;
 }
 
