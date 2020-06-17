@@ -7,7 +7,7 @@ module.exports = {
         "ecmaVersion": 9,
         "sourceType": "module"
     },
-    "extends": ["eslint:recommended", "google"],
+    "extends": ["eslint:recommended", "@hellomouse/wolfy1339"],
     "rules": {
         "indent": [
             "error",
