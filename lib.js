@@ -162,7 +162,7 @@ class bytearray {
     }
 }
 
-module.export = {
+module.exports = {
     ascii,
     range,
     len,
