@@ -1,4 +1,4 @@
-const { isinstance, range, len } = require('./index');
+const { isinstance, range, len } = require('./lib');
 
 function* enumerate(iterable, start=0) {
     if (isinstance(iterable, Array)) {

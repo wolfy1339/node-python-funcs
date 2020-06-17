@@ -1,4 +1,4 @@
-const { range, len } = require('./index.js');
+const { range, len } = require('./lib');
 
 /** */
 class list extends Array {
