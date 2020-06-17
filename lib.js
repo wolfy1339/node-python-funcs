@@ -163,6 +163,7 @@ class bytearray {
 }
 
 module.export = {
+    ascii,
     range,
     len,
     print,

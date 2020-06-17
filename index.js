@@ -17,7 +17,6 @@ module.exports = {
     dict,
     ...str,
     ...numbers,
-    ascii,
     ...math,
     bool,
     ...attributes,
