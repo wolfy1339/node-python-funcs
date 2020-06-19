@@ -5,6 +5,7 @@ class dict extends Object {
     */
     constructor(value) {
         super();
+        this.map = new Map();
         this.update(value);
     }
 
@@ -13,16 +14,14 @@ class dict extends Object {
     * @return {array}
     */
     items() {
-        return Object.entries(this);
+        return this.map.entries();
     }
 
     /**
     * @func
     */
     clear() {
-        for (const key of this.keys()) {
-            delete this[key];
-        }
+        return this.map.clear();
     }
 
     /**
@@ -32,7 +31,7 @@ class dict extends Object {
     * @return {(object|array|string|function|boolean|number)}
     */
     get(key, def=null) {
-        return this[key] || def;
+        return this.map.get(key) || def;
     }
 
     /**
@@ -44,7 +43,7 @@ class dict extends Object {
     pop(key, def=null) {
         const old = this[key];
 
-        delete this[key];
+        this.map.delete(key);
 
         return old || def;
     }
@@ -68,7 +67,7 @@ class dict extends Object {
     * @return {array}
     */
     keys() {
-        return Object.keys(this);
+        return this.map.keys();
     }
 
     /**
